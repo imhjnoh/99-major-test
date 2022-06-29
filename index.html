@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>항해99 React 주특기 과제 - 회원가입</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    
   </head>
+
+  <script>
+    function submit_form() {
+      alert("제출 완료!");
+    }
+  </script>
 
   <body>
     <div class="card_container">
       <h1 class="card_title"><i>Sign_up!</i></h1>
-      <form action="submit()">
+      <form onsubmit="submit_form()">
         <div class="card">
           First name : <br />
           <input id="first_name" type="text" required /> <br />
@@ -20,9 +27,9 @@
           Email : <br />
           <input id="email" type="text" required /> <br />
           Gender :
-          <input id="male" type="radio" value="male" name="gender" />
+          <input id="male" type="radio" value="male" name="gender" required/>
           <label for="male">Male</label>
-          <input id="female" type="radio" value="male" name="gender"/>
+          <input id="female" type="radio" value="female" name="gender" required/>
           <label for="female">Female</label> <br />
           Favorite :
           <input id="HTML" type="checkbox" value="HTML" />
